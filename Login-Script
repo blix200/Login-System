@@ -1,3 +1,4 @@
+-- MAKE SURE YOU READ THE INSTRUCTIONS OR IT WILL MOST LIKELY NOT WORK
 
 local LoginScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
@@ -11,7 +12,6 @@ local TextBox = Instance.new("TextBox")
 local UICorner_2 = Instance.new("UICorner")
 local TextBox_2 = Instance.new("TextBox")
 local UICorner_3 = Instance.new("UICorner")
-
 
 LoginScreenGui.Name = "LoginScreenGui"
 LoginScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -136,10 +136,9 @@ TextButton.MouseButton1Click:Connect(function()
         print("Yes")
         WelcomeTextLabel.Text = "Welcome " .. username
         Frame.Visible = false
-        
     else
     -----------------------------------NOT WHITELISTED CODE BELOW
-    print("no")
+        print("no")
         TextBox_2.Text = ""
         TextBox.Text = ""
     end
